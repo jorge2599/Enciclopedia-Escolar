@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#244b35"><meta name="description" content="JK: enciclopedia del microemprendimiento de plantines. Conocé las plantas, sus cuidados y el proceso de producción.">
+  <title>JK | Enciclopedia del microemprendimiento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand jk-brand" href="#" aria-label="JK, inicio" data-section="inicio">
+      <span class="jk-mark" aria-hidden="true">
+        <span class="jk-letters">J<span>K</span></span>
+        <svg viewBox="0 0 100 76" role="presentation" aria-hidden="true">
+          <path d="M13 66 C24 52 25 35 43 23 C57 13 72 16 87 5" />
+          <path d="M31 47 C15 45 10 34 12 23 C26 24 35 32 31 47Z" />
+          <path d="M53 25 C50 10 58 2 70 1 C72 14 65 23 53 25Z" />
+          <path d="M66 18 C77 15 87 20 89 31 C77 34 68 29 66 18Z" />
+        </svg>
+      </span>
+      <span class="brand-copy"><strong>JK</strong><small>ENCICLOPEDIA DEL MICROEMPRENDIMIENTO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation" aria-label="Navegación principal">
+      <button class="nav-link active" data-section="inicio">Inicio</button>
+      <button class="nav-link" data-section="plantas">Plantas</button>
+      <button class="nav-link" data-section="cuidados">Cuidados</button>
+      <button class="nav-link" data-section="produccion">Producción</button>
+      <button class="nav-link" data-section="caracteristicas">Características</button>
+      <button class="nav-link" data-section="documentacion">Documentación</button>
+      <button class="nav-link" data-section="informe">Informe</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema"><span class="theme-icon">☾</span><span class="theme-label">Modo oscuro</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section class="page-section active" id="inicio">
+      <div class="falling-leaves" aria-hidden="true">
+        <span>✦</span><span>❧</span><span>✿</span><span>❧</span><span>✦</span><span>❧</span><span>✿</span>
+      </div>
+      <div class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">MICROEMPRENDIMIENTO JK · CULTIVAR TAMBIÉN ES APRENDER</span>
+          <h1>Un pequeño mundo<br><em>lleno de vida.</em></h1>
+          <p>Conocé distintas plantas, descubrí qué necesitan para crecer y aprendé a cuidarlas desde sus primeros brotes.</p>
+          <button class="button button-light" data-go="plantas">Explorar las plantas <span>→</span></button>
+        </div>
+        <div class="hero-photo" role="img" aria-label="Plantas verdes creciendo en macetas">
+          <div class="growth-scene" aria-hidden="true">
+            <div class="growth-glow"></div>
+            <div class="growth-ground"></div>
+            <div class="sprout sprout-one"><i></i><b></b><span></span></div>
+            <div class="sprout sprout-two"><i></i><b></b><span></span></div>
+            <div class="sprout sprout-three"><i></i><b></b><span></span><em></em></div>
+            <div class="growth-caption">CRECER, FLORECER, COMPARTIR</div>
+          </div>
+        </div>
+      </div>
+      <div class="garden-band">
+        <span class="eyebrow">UN JARDÍN, MUCHAS POSIBILIDADES</span>
+        <div class="garden-types">
+          <div class="garden-type"><span class="garden-plant ornamental">✿</span><b>Ornamentales</b><small>Color y belleza</small></div>
+          <div class="garden-type"><span class="garden-plant aromatic">❧</span><b>Aromáticas</b><small>Perfume natural</small></div>
+          <div class="garden-type"><span class="garden-plant edible">🌱</span><b>Huerta</b><small>Hierbas y cultivos</small></div>
+        </div>
+      </div>
+      <div class="intro-grid">
+        <article class="intro-card">
+          <span class="intro-icon">🌱</span>
+          <h2>Conocé</h2>
+          <p>Explorá una selección de plantas ornamentales, aromáticas, frutales, de huerta y árboles.</p>
+        </article>
+        <article class="intro-card">
+          <span class="intro-icon">💧</span>
+          <h2>Aprendé</h2>
+          <p>Encontrá consejos sencillos sobre riego, luz, suelo y mantenimiento.</p>
+        </article>
+        <article class="intro-card">
+          <span class="intro-icon">🌿</span>
+          <h2>Cultivá</h2>
+          <p>Pequeños cuidados diarios pueden convertirse en grandes resultados.</p>
+        </article>
+      </div>
+      <div class="welcome-strip">
+        <div><span class="eyebrow">VERDE BOTÁNICO</span><h2>Cada planta tiene su propia forma de crecer.</h2></div>
+        <p>Esta guía reúne información básica para elegir y cuidar tus plantas. Los tiempos y necesidades pueden variar según el clima y la época del año.</p>
+      </div>
+    </section>
+
+    <!-- PLANTAS -->
+    <section class="page-section content-section" id="plantas">
+      <div class="section-heading">
+        <span class="eyebrow">GUÍA DE ESPECIES</span>
+        <h1>Conocé las <em>plantas</em></h1>
+      </div>
+      <div class="plant-tools">
+        <label class="search-box"><span>⌕</span><input id="plantSearch" type="search" placeholder="Buscar una planta..." aria-label="Buscar una planta"></label>
+        <div class="filters" aria-label="Filtrar plantas">
+          <button class="filter active" data-filter="todas">Todas</button>
+          <button class="filter" data-filter="aromatica">Aromáticas</button>
+          <button class="filter" data-filter="ornamental">Ornamentales</button>
+          <button class="filter" data-filter="frutal">Frutales</button>
+          <button class="filter" data-filter="arbol">Árboles</button>
+          <button class="filter" data-filter="huerta">Huerta</button>
+        </div>
+      </div>
+      <div class="plant-grid" id="plantGrid">
+        <article class="plant-card" data-category="aromatica" data-name="ruda">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH9mR2HHEljjDwBoInIdxlPr3uVvJvJmu_WOIhf4CYsCJIhzUatPWvOxHt&s=10" alt="Planta aromática verde en maceta" loading="lazy">
+          <div class="plant-info"><span class="tag">AROMÁTICA</span><h2>Ruda</h2><p>Planta aromática de aroma intenso, cultivada como ornamental y tradicionalmente asociada a usos populares.</p><button class="details-button" data-plant="ruda">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="aromatica" data-name="menta">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq70-f1gyrmJ4lPBg8dg7oqmaGzqeZCXPckyOfUdk4cg&s=10" alt="Hojas verdes de menta" loading="lazy">
+          <div class="plant-info"><span class="tag">AROMÁTICA</span><h2>Menta</h2><p>Crece con facilidad y agradece un sustrato fresco y húmedo.</p><button class="details-button" data-plant="menta">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="frutal" data-name="mandarina">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzNDRc_PNkFN2KcNEuveA86gNiNTYqC3jLDUQtut6vzA&s=10" alt="Mandarina madura con hojas verdes" loading="lazy">
+          <div class="plant-info"><span class="tag">FRUTAL</span><h2>Mandarina</h2><p>Fruto cítrico jugoso, fuente de vitamina C y fibra; el árbol necesita sol y protección contra heladas.</p><button class="details-button" data-plant="mandarina">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="ornamental" data-name="celosia argentea">
+          <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780323918978000149-f07-07-9780323918978.jpg" alt="Flor ornamental de Celosia argentea" loading="lazy">
+          <div class="plant-info"><span class="tag">ORNAMENTAL</span><h2>Celosia argentea</h2><p>Planta anual de flores vistosas que pueden presentar formas de cresta, plumero o espiga.</p><button class="details-button" data-plant="celosia">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="ornamental" data-name="kalanchoe laxiflora">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_OgiSXJcIAxlJaLUAULuK9vZgDWuUDu0pkbxveOb4bQ&amp;s=10" alt="Kalanchoe laxiflora con hojas suculentas" loading="lazy">
+          <div class="plant-info"><span class="tag">ORNAMENTAL</span><h2>Kalanchoe laxiflora</h2><p>Suculenta perenne de Madagascar que produce pequeñas plántulas en los bordes dentados de sus hojas.</p><button class="details-button" data-plant="kalanchoe">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="huerta" data-name="cebollín">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5VhxFQucozVnnppFQoiZIZw8IXXz6RK8k95FBbc8Gg&amp;s=10" alt="Cebollín creciendo en una maceta" loading="lazy">
+          <div class="plant-info"><span class="tag">HUERTA</span><h2>Cebollín</h2><p>Hierba perenne de hojas finas y huecas, fácil de cultivar en macetas y huertas.</p><button class="details-button" data-plant="cebollin">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="arbol" data-name="almendro indio">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUiSmYl4YNwQRtYyYH4Zzykbo1-zGdBqiZ7yq8E01BbQ&s=10" alt="Árbol con copa amplia y verde" loading="lazy">
+          <div class="plant-info"><span class="tag">ÁRBOL</span><h2>Almendro indio</h2><p>Árbol ornamental de gran porte y copa amplia, con hojas que pueden tomar tonos rojizos y dorados.</p><button class="details-button" data-plant="almendroIndio">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="huerta" data-name="morrón">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvCNVnMArJrj8au25WTLt-nOztSYBQ887VWXIr7Ewx5g&s=10" alt="Planta de morrón con frutos" loading="lazy">
+          <div class="plant-info"><span class="tag">HUERTA</span><h2>Morrón</h2><p>Planta de huerta que produce frutos coloridos y crujientes cuando recibe buen sol y cuidados.</p><button class="details-button" data-plant="morron">Ver cuidados <span>→</span></button></div>
+        </article>
+        <article class="plant-card" data-category="huerta" data-name="lechuga">
+          <img src="https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?auto=format&fit=crop&w=900&q=85" alt="Planta de lechuga con hojas verdes" loading="lazy">
+          <div class="plant-info"><span class="tag">HUERTA</span><h2>Lechuga</h2><p>Hortaliza de hojas tiernas, fácil de cultivar en macetas y huertas con riego frecuente.</p><button class="details-button" data-plant="lechuga">Ver cuidados <span>→</span></button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos plantas con esa búsqueda.</p>
+    </section>
+
+    <!-- CUIDADOS -->
+    <section class="page-section content-section" id="cuidados">
+      <div class="section-heading">
+        <span class="eyebrow">GUÍA PRÁCTICA</span>
+        <h1>Cuidados para que <em>crezcan bien</em></h1>
+        <p>Cuatro aspectos básicos para mantener plantas sanas.</p>
+      </div>
+      <div class="care-layout">
+        <div class="care-photo"></div>
+        <div class="care-list">
+          <article class="care-item"><span>01</span><div><h2>Riego adecuado</h2><p>Comprobá la humedad del sustrato antes de regar. Introducí un dedo unos centímetros: si todavía está húmedo, esperá. Evitá dejar agua acumulada en el plato.</p></div><b>💧</b></article>
+          <article class="care-item"><span>02</span><div><h2>Luz y ubicación</h2><p>Muchas aromáticas necesitan varias horas de sol. Las especies de interior suelen preferir luz abundante, pero indirecta.</p></div><b>☀️</b></article>
+          <article class="care-item"><span>03</span><div><h2>Tierra y drenaje</h2><p>Usá un sustrato suelto y una maceta con agujeros. Un buen drenaje permite que salga el exceso de agua y ayuda a cuidar las raíces.</p></div><b>🪴</b></article>
+          <article class="care-item"><span>04</span><div><h2>Revisión y mantenimiento</h2><p>Retirá hojas secas, observá si aparecen manchas o insectos y limpiá las herramientas. Revisá la planta con frecuencia para detectar problemas a tiempo.</p></div><b>✂️</b></article>
+        </div>
+      </div>
+      <div class="tip-box"><span>🌱 CONSEJO VERDE</span><p>En épocas de mucho calor, revisá tus macetas con mayor frecuencia. El sol fuerte de la tarde puede estresar algunas plantas, especialmente los plantines jóvenes.</p></div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="page-section content-section" id="caracteristicas">
+      <div class="section-heading">
+        <span class="eyebrow">APRENDER A DIFERENCIAR</span>
+        <h1>Características de las <em>plantas</em></h1>
+        <p>Una forma sencilla de reconocer sus necesidades y elegir dónde cultivarlas.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-symbol">🌿</div><h2>Plantas aromáticas</h2><p>Contienen aromas característicos en sus hojas o tallos. Se cultivan por su perfume y valor ornamental; algunas tienen usos tradicionales que no reemplazan tratamientos médicos.</p><span>Ejemplos: ruda y menta.</span></article>
+        <article class="feature-card"><div class="feature-symbol">🌸</div><h2>Plantas ornamentales</h2><p>Se cultivan para decorar espacios por sus hojas, flores, formas o colores. Sus necesidades de luz y agua dependen de cada especie.</p><span>Ejemplos: potus, aloe vera y suculentas.</span></article>
+        <article class="feature-card"><div class="feature-symbol">🍊</div><h2>Plantas frutales</h2><p>Producen frutos que contienen semillas. Según la especie, pueden crecer como árboles o arbustos y necesitan espacio para desarrollarse.</p><span>Ejemplo: mandarino.</span></article>
+      </div>
+      <div class="requirements">
+        <div><span class="eyebrow">ANTES DE PLANTAR</span><h2>¿Qué necesita una planta?</h2></div>
+        <ul><li><b>Luz:</b> energía para realizar la fotosíntesis.</li><li><b>Agua:</b> necesaria para transportar nutrientes.</li><li><b>Aire:</b> intercambio de gases y oxígeno para las raíces.</li><li><b>Nutrientes:</b> minerales que obtiene del sustrato.</li><li><b>Espacio:</b> lugar suficiente para crecer y desarrollar raíces.</li></ul>
+      </div>
+    </section>
+
+    <!-- PRODUCCIÓN -->
+    <section class="page-section content-section editorial-section" id="produccion">
+      <div class="section-heading">
+        <span class="eyebrow">DEL SEMILLERO AL PLANTÍN</span>
+        <h1>¿Cómo se produce un <em>plantín</em>?</h1>
+        <p>Un recorrido por las etapas de producción y seguimiento del cultivo.</p>
+      </div>
+      <div class="editorial-intro production-intro">
+        <div class="editorial-icon">🌱</div>
+        <div><span class="eyebrow">ORGANIZACIÓN DEL PROYECTO</span><h2>Organización de nuestra producción</h2><p>A continuación, se describe cómo organizamos la producción de plantines durante el desarrollo del proyecto, teniendo en cuenta las especies cultivadas, los materiales disponibles, los cuidados necesarios y las dificultades que se presentaron.</p></div>
+      </div>
+      <div class="production-steps">
+        <article class="writing-card production-step"><span class="writing-number">01 / PREPARACIÓN</span><h2>Reunir los materiales</h2><p>Para comenzar, reutilizamos distintos recipientes, como botellas, frascos y cartones de vino, para utilizarlos como macetas. Luego reunimos los materiales necesarios para diseñar y fabricar nuestras propias macetas biodegradables, con una base de plástico que se puede retirar si se desea plantar directamente en la tierra. También utilizamos papel para forrar y decorar las macetas.</p></article>
+        <article class="writing-card production-step"><span class="writing-number">02 / SIEMBRA</span><h2>Preparar y sembrar</h2><p>Una vez preparados los recipientes, colocamos tierra en ellos y comenzamos a sembrar las semillas de las distintas especies. También utilizamos gajos para reproducir algunas plantas. Después de sembrar, humedecimos la tierra y comenzamos con los cuidados necesarios para favorecer el crecimiento de los plantines.</p></article>
+        <article class="writing-card production-step"><span class="writing-number">03 / GERMINACIÓN</span><h2>Observar el crecimiento</h2><p>Durante esta etapa observamos el crecimiento de las semillas y los cambios que presentaban las plantas. Controlamos la humedad de la tierra, el riego y la exposición a la luz solar. También estuvimos atentos a su estado para detectar posibles problemas y mantener los plantines en buenas condiciones.</p></article>
+        <article class="writing-card production-step"><span class="writing-number">04 / TRASPLANTE</span><h2>Cuidar los plantines</h2><p>A medida que los plantines fueron creciendo, los colocamos en recipientes individuales cuando fue necesario, procuranto que tuvieran suficiente espacio para desarrollarse. También continuamos controlando el riego, la humedad y la exposición al sol para mantenerlos sanos. Los recipientes biodegradables que fabricamos permiten retirar la base de plástico y plantar directamente en la tierra.</p></article>
+      </div>
+    </section>
+
+    <!-- DOCUMENTACIÓN -->
+    <section class="page-section content-section editorial-section" id="documentacion">
+      <div class="section-heading">
+        <span class="eyebrow">REGISTRO DEL PROYECTO</span>
+        <h1>Documentación del <em>proceso</em></h1>
+        <p>Información general sobre las etapas y los recursos de un proyecto de producción de plantines.</p>
+      </div>
+      <div class="editorial-intro">
+        <div class="editorial-icon">📚</div>
+        <div class="documentation-copy">
+          <span class="eyebrow">BITÁCORA DE PRODUCCIÓN</span>
+          <h2>De la semilla al crecimiento de nuestros plantines.</h2>
+          <p>Conocé cómo desarrollamos nuestro proyecto, desde la selección de materiales y la siembra hasta el cuidado de las plantas y la elaboración de nuestras macetas biodegradables.</p>
+        </div>
+      </div>
+      <div class="writing-grid">
+        <article class="writing-card">
+          <span class="writing-number">01 / PROCESO</span>
+          <h2>Proceso de cultivo</h2>
+          <p>El cultivo de los plantines comienza con la selección de semillas y la preparación de los recipientes. Luego se coloca el sustrato, se realiza la siembra y se mantiene una humedad adecuada para favorecer la germinación. Cuando los brotes crecen, se continúa con sus cuidados y, si es necesario, se realiza el trasplante.</p>
+        </article>
+        <article class="writing-card">
+          <span class="writing-number">02 / RECURSOS</span>
+          <h2>Materiales y recursos</h2>
+          <p>Para producir plantines pueden utilizarse semillas, tierra o sustrato, agua y recipientes adecuados. También se pueden reutilizar envases limpios como macetas, siempre que tengan orificios para permitir el drenaje. Las herramientas básicas ayudan a preparar la tierra y realizar la siembra.</p>
+        </article>
+        <article class="writing-card">
+          <span class="writing-number">03 / ORGANIZACIÓN</span>
+          <h2>Etapas y tareas</h2>
+          <p>El trabajo puede organizarse en distintas etapas: preparación de materiales, siembra, riego, seguimiento de la germinación y mantenimiento de los plantines. La observación periódica permite controlar su crecimiento y detectar cuándo necesitan agua, más luz o algún otro cuidado.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INFORME -->
+    <section class="page-section content-section editorial-section" id="informe">
+      <div class="section-heading">
+        <span class="eyebrow">EVALUACIÓN DEL EMPRENDIMIENTO</span>
+        <h1>Informe del <em>microemprendimiento</em></h1>
+        <p>Una mirada general a los desafíos que pueden surgir y a los aprendizajes que deja el cultivo.</p>
+      </div>
+      <div class="editorial-intro report-intro">
+        <div class="editorial-icon">📝</div>
+        <div><span class="eyebrow">ANÁLISIS Y RESULTADOS</span><h2>Aprender también es parte de crecer.</h2>
+        <p>En un proyecto de cultivo pueden aparecer distintos inconvenientes. La observación y los cuidados adecuados ayudan a resolverlos y aprender durante el proceso.</p></div>
+      </div>
+      <div class="writing-grid">
+        <article class="writing-card">
+          <span class="writing-number">01 / DESAFÍOS</span>
+          <h2>Dificultades e inconvenientes</h2>
+          <p>Durante nuestro proyecto tuvimos algunas dificultades con el cuidado y la producción de las plantas. Perdimos cuatro plantines de argentea y solamente quedaron dos en buen estado. También se nos murieron casi todas las plantas de huerta debido a los cambios bruscos del clima. Algunas plantitas se pudrieron por las lluvias y el exceso de humedad, ya que la tierra no llegaba a secarse. Otra dificultad fue fabricar las macetas, porque el material que utilizamos era muy grueso y difícil de cortar. Además, las plantas necesitaban cuidados constantes y, si nos descuidábamos, comenzaban a marchitarse. También nos costaba organizarnos para juntarnos y atenderlas. </p>
+        </article>
+        <article class="writing-card">
+          <span class="writing-number">02 / RESPUESTAS</span>
+          <h2>Soluciones aplicadas</h2>
+          <p>Para mejorar el cuidado de los plantines, aprovechamos el espacio que quedó libre después de perder cuatro ejemplares de argentea, ya que estaban demasiado juntos y el calor excesivo también los afectaba. En el caso de las plantas de huerta, después de las pérdidas causadas por el calor y el exceso de humedad, decidimos conservar el único morrón que quedó sano, porque ya no teníamos tiempo para volver a sembrar. También modificamos la forma de riego: dejamos de regar hasta que la tierra se secara y comenzamos a controlar mejor la cantidad de agua, mojando solamente la superficie o lo necesario para cada planta. Para fabricar las macetas, evaluamos utilizar otros materiales, pero decidimos mantener el tubo de cartón grueso porque es biodegradable y puede descomponerse en la tierra, aportando materia orgánica. Además, incorporamos una base de plástico que se puede retirar al momento de trasplantar el plantín. Por otro lado, nos repartimos las plantas para que cada integrante pudiera cuidarlas por separado y hacerse responsable de ellas. Finalmente, para organizarnos con las tareas del proyecto, acordamos reunirnos los fines de semana para preparar la carpeta y fabricar las macetas.</p>
+        </article>
+        <article class="writing-card">
+          <span class="writing-number">03 / BALANCE</span>
+          <h2>Resultados y aprendizajes</h2>
+          <p>Durante el desarrollo del proyecto logramos producir distintos plantines y diseñar nuestras propias macetas biodegradables utilizando materiales accesibles y reciclados. Aunque tuvimos pérdidas debido al calor, las lluvias y el exceso de humedad, aprendimos a mejorar los cuidados y controlar mejor el riego. También adquirimos experiencia en la organización del trabajo, la reutilización de materiales y la producción de plantines. Esta experiencia nos permitió comprender que cultivar requiere paciencia, responsabilidad y dedicación.</p>
+        </article>
+      </div>
+    </section>
+
+  <footer class="footer">
+    <a class="footer-brand jk-footer" href="#" data-section="inicio">JK <span>✿</span></a>
+    <p>Pequeños cuidados, grandes raíces.</p>
+    <div class="credits-details">
+      <strong>Colegio N.º 96 · 6.º Año</strong>
+      <div class="credits-subjects" aria-label="Espacios para cuatro materias">
+        <button class="subject-button" data-subject="tic">TIC</button>
+        <span>MARCO JURIDICO</span>
+        <span>EDI</span>
+        <span>TECNOLOGIA Y GESTION</span>
+      </div>
+    </div>
+    <span>© 2026 · Enciclopedia del microemprendimiento</span>
+  </footer>
+
+  <div class="modal" id="plantModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Cerrar">×</button>
+      <span class="eyebrow">FICHA DE CUIDADO</span>
+      <h2 id="modalTitle">Planta</h2>
+      <p id="modalDescription"></p>
+      <div class="modal-facts">
+        <div><span>☀️ Luz</span><p id="modalLight"></p></div>
+        <div><span>💧 Riego</span><p id="modalWater"></p></div>
+        <div><span>🪴 Sustrato</span><p id="modalSoil"></p></div>
+        <div><span>🌡️ Temperatura</span><p id="modalTemp"></p></div>
+      </div>
+      <div class="plant-extra" id="modalExtra" hidden>
+        <section><h3>Características botánicas</h3><p id="modalBotany"></p></section>
+        <section><h3>Cultivo y propagación</h3><p id="modalCultivation"></p></section>
+        <section><h3>Usos y tradición</h3><p id="modalUses"></p></section>
+        <section class="plant-warning"><h3>Precauciones y toxicidad</h3><p id="modalSafety"></p></section>
+      </div>
+      <p class="modal-note">Los cuidados son orientativos. Ajustalos según la estación, el clima y el estado de la planta.</p>
+    </article>
+  </div>
+
+  <div class="subject-modal" id="ticModal" aria-hidden="true">
+    <div class="subject-modal-backdrop" data-close-tic></div>
+    <article class="subject-card" role="dialog" aria-modal="true" aria-labelledby="ticTitle">
+      <button class="subject-card-close" type="button" data-close-tic aria-label="Cerrar">×</button>
+      <div class="subject-vines" aria-hidden="true"><span>❧</span><span>✿</span><span>❧</span></div>
+      <span class="eyebrow">CRÉDITO ACADÉMICO</span>
+      <h2 id="ticTitle">TIC</h2>
+      <p><strong>Materia:</strong> Tecnología de la información y comunicación</p>
+      <p><strong>Profe:</strong> Gladys Ortiz</p>
+    </article>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
